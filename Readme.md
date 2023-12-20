@@ -30,6 +30,9 @@ Since BPP's take a lot of disk, they can only be downloaded from competitions we
 #### EXAMPLE: Change train configuration, add comment for neptune experiment tracking
 `python train_ddp.py -C cfg_2 -lr 1.5e-3 -epochs 50 -comment "Neptune comment for experiment"`
 
+#### Inference: Just run the script for the model you want to inference
+`python inference_mdl_1_squeezeformer.py`
+
 
 ### Recreating 3rd place submission:
 First twin-tower model is trained with the current configuration (cfg_2). Then with the twin-tower models weights synthetic data is created by running `python generate_synthetic.py`. Squeezeformer is then trained on both the clean dataset and synthetic dataset with the current configuration (cfg_1).
