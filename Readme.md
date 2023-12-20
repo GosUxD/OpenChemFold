@@ -1,15 +1,15 @@
 Hello!
 
-Below you can find a outline of how to reproduce my solution for the [Stanford Ribonanza RNA Folding](https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/overview) competition.
+Below you can find a outline of how to reproduce 3rd solution for the [Stanford Ribonanza RNA Folding](https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/overview) competition.
 If you run into any trouble with the setup/code or have any questions please contact me at <gosuxd1@gmail.com>
 
-Below is the architectures of the 2 models used for the 3rd Place Solution
+Below is the architectures of the 2 models used for the final submission
 # Twin Tower Model
 ![Twin Tower Model](twin_tower.jpg)
 # Squeezeformer Model
 ![Squeezeformer Architecture](squeezeformer.jpg)
 
-#DATA SETUP
+## DATA SETUP
 Data should be downloaded from Kaggle competition website and placed under /datamount/.
 train_data.csv is then preprocessed with preprocess_dataset_to_parquet.py to create folded parquet file.
 
