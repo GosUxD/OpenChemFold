@@ -1,0 +1,1 @@
+Additional data to be used should be placed here. BPP's in .txt format, then preprocess_bpps.py should be called to create bpp_index.csv and .npz files.
