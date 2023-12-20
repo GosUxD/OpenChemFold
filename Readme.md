@@ -13,7 +13,7 @@ Below is the architectures of the 2 models used for the final submission
 Data should be downloaded from Kaggle competition website and placed under /datamount/.
 train_data.csv is then preprocessed with preprocess_dataset_to_parquet.py to create folded parquet file.
 
-Optionally: preprocessed training_data.parquet and synthetic data used for final submission are included for quick start in training.
+Optionally: preprocessed training_data.parquet and synthetic data used for final submission can be downloaded from gdrive for quick start in training.
 
 Since BPP's take a lot of disk, they can only be downloaded from competitions website. Place them under datamount/supp_data and preprocessed with preprocess_bpps.py script to create a bpps_index.csv and .npz files that are being used in the training of the model.
 
@@ -39,11 +39,11 @@ Pretrained weights of the final submission models are inside datamount/weights
 
 
 #HARDWARE: (The following specs were used to create the original solution)
-Ubuntu 22.04.3 LTS
-CPU: i7-13700K (24 vCPUs)
-2 x NVIDIA RTX 4090 (24GB each)
-96GB RAM (2x32 GB + 2x64 GB)
-1TB SSD
+- Ubuntu 22.04.3 LTS
+- CPU: i7-13700K (24 vCPUs)
+- 2 x NVIDIA RTX 4090 (24GB each)
+- 96GB RAM (2x32 GB + 2x64 GB)
+- 1TB SSD
 
 #SOFTWARE (python packages are detailed separately in `requirements.txt`):
 python                    3.11.5
