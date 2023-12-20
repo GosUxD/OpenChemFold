@@ -38,14 +38,14 @@ Simple blend from both models (0.5 weight each) is used for the final submission
 Pretrained weights of the final submission models are inside datamount/weights
 
 
-#HARDWARE: (The following specs were used to create the original solution)
+### HARDWARE: (The following specs were used to create the original solution)
 - Ubuntu 22.04.3 LTS
 - CPU: i7-13700K (24 vCPUs)
 - 2 x NVIDIA RTX 4090 (24GB each)
 - 96GB RAM (2x32 GB + 2x64 GB)
 - 1TB SSD
 
-#SOFTWARE (python packages are detailed separately in `requirements.txt`):
+### SOFTWARE (python packages are detailed separately in `requirements.txt`):
 python                    3.11.5
 CUDA                      12.1
 PyTorch                   2.1.0
