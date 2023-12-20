@@ -1,11 +1,12 @@
 Hello!
 
-Below you can find a outline of how to reproduce my solution for the <Stanford Ribonanza RNA Folding> competition.
+Below you can find a outline of how to reproduce my solution for the ![Stanford Ribonanza RNA Folding](https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/overview) competition.
 If you run into any trouble with the setup/code or have any questions please contact me at <gosuxd1@gmail.com>
 
 Below is the architectures of the 2 models used for the 3rd Place Solution
+## Twin Tower Model
 ![Twin Tower Model](twin_tower.jpg)
-
+## Squeezeformer
 ![Squeezeformer Architecture](squeezeformer.jpg)
 
 #DATA SETUP
@@ -17,20 +18,20 @@ Optionally: preprocessed training_data.parquet and synthetic data used for final
 Since BPP's take a lot of disk, they can only be downloaded from competitions website. Place them under datamount/supp_data and preprocessed with preprocess_bpps.py script to create a bpps_index.csv and .npz files that are being used in the training of the model.
 
 
-#Simple Squeezeformer training
+# Simple Squeezeformer training
 `python train.py -C cfg_1` 
  
-#EXAMPLE: change train configuration, use 1st GPU, disable neptune experiment tracking:
+# EXAMPLE: change train configuration, use 1st GPU, disable neptune experiment tracking:
 `python train.py -C cfg_1 -G 0 -batch_size 256 -lr 7e-4 -logging False`
 
-#Simple twin-tower model training for 2 GPU setup
+# Simple twin-tower model training for 2 GPU setup
 `python train_ddp -C cfg_2`
 
-#EXAMPLE: Change train configuration, add comment for neptune experiment tracking
+# EXAMPLE: Change train configuration, add comment for neptune experiment tracking
 `python train_ddp.py -C cfg_2 -lr 1.5e-3 -epochs 50 -comment "Neptune comment for experiment"`
 
 
-#Recreating 3rd place submission:
+# Recreating 3rd place submission:
 First twin-tower model is trained with the current configuration (cfg_2). Then with the twin-tower models weights synthetic data is created by running `python generate_synthetic.py`. Squeezeformer is then trained on both the clean dataset and synthetic dataset with the current configuration (cfg_1).
 
 Simple blend from both models (0.5 weight each) is used for the final submission.
