@@ -1,6 +1,6 @@
 Hello!
 
-Below you can find a outline of how to reproduce my solution for the ![Stanford Ribonanza RNA Folding](https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/overview) competition.
+Below you can find a outline of how to reproduce my solution for the [Stanford Ribonanza RNA Folding](https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/overview) competition.
 If you run into any trouble with the setup/code or have any questions please contact me at <gosuxd1@gmail.com>
 
 Below is the architectures of the 2 models used for the 3rd Place Solution
