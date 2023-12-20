@@ -6,7 +6,7 @@ If you run into any trouble with the setup/code or have any questions please con
 Below is the architectures of the 2 models used for the 3rd Place Solution
 ## Twin Tower Model
 ![Twin Tower Model](twin_tower.jpg)
-## Squeezeformer
+## Squeezeformer Model
 ![Squeezeformer Architecture](squeezeformer.jpg)
 
 #DATA SETUP
