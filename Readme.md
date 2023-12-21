@@ -13,7 +13,7 @@ Below is the architectures of the 2 models used for the final submission
 Data should be downloaded from Kaggle competition website and placed under /datamount/.
 train_data.csv is then preprocessed with preprocess_dataset_to_parquet.py to create folded parquet file.
 
-Optionally: preprocessed training_data.parquet and synthetic data used for final submission can be downloaded from gdrive for quick start in training.
+Optionally: preprocessed training_data.parquet and synthetic data used for final submission can be downloaded from [gdrive](https://drive.google.com/drive/folders/1eIia-dGmMiKxMni4GhkYia3jvJ3sYM-h?usp=sharing) for quick start in training.
 
 Since BPP's take a lot of disk, they can only be downloaded from competitions website. Place them under datamount/supp_data and preprocessed with preprocess_bpps.py script to create a bpps_index.csv and .npz files that are being used in the training of the model.
 
